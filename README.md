@@ -108,12 +108,13 @@ Invest in improving playback features and user experience on Android, as it’s 
 **Personalized Playlists:**
 Use insights from skipped tracks to curate playlists tailored to user preferences, reducing the likelihood of skips.
 
----
 **Engage During Evenings:**
 Encourage evening listening with calming or thematic playlists to align with user behavior.
 
 **Artist Promotion:**
 Highlight popular artists (e.g., The Beatles) to capitalize on existing listening trends and introduce similar genres or artists.
+
+---
 
 ## **Steps to Build the Dashboard in Power BI**  
 
