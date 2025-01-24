@@ -1,11 +1,7 @@
+# **Spotify Listening Insights**  
 
----
-
-# Spotify Listening Insights 
- 
 ## **Project Overview**
-
-This project dives deep into Spotify listening behavior. Using Power BI, I created a dashboard to visualize how users interact with tracks—what they love, when they listen most, and what they skip. Here’s everything you need to know about the dashboard, the insights it provides, and how I built it.  
+This report analyzes user behavior based on playback data from Spotify, focusing on metrics such as playback time, skipped tracks, platform usage, and track completion rates. The goal is to uncover listening trends, identify areas for improvement, and provide actionable recommendations.
 
 ---
 
@@ -17,114 +13,82 @@ From Maven Analytics
 ## **Overview of the Dashboard**  
 
 The dashboard is split into two pages:  
-- **Page 1:** Gives a broad overview of listening habits, most played tracks, skip patterns, and platform usage.
+- **Page 1:** Gives a broad overview of listening habits, most played tracks, skip patterns, and platform usage.  
 ![Image](https://github.com/user-attachments/assets/cd56b199-8931-4820-946f-eeff796e62a7)
-
 
 - **Page 2:** Focuses on deeper analysis, such as when people are most active, skip rates across platforms, and most popular artists.  
 ![Image](https://github.com/user-attachments/assets/cca239f9-be23-4ece-bbc6-fc310790d666)
 
-Here are the main metrics and visuals I’ve included: 
+---
 
-### **Page 1: Listening Overview**  
-1. **Total Playback Time (5,280 hours):**  
-   Shows the total time users spent listening to tracks, converted from milliseconds into hours.  
+### **Key Metrics and Insights**
+#### 1. **Playback Time**  
+- **Total Playback Time**: 5,280 hours of music played.
+- **Average Playback Time Per Track**: 2 minutes.
+- **Peak Listening Periods**:  
+  - Most playback occurs during the **evening hours (6 PM - 12 AM)**, showing this is the most active period for listeners.
+  - **Morning hours (6 AM - 12 PM)** also show considerable playback activity, likely tied to commute or work-related listening.
 
-2. **Track Time (2 minutes):**  
-   The average time spent on each track, giving insight into track engagement.  
+#### 2. **Tracks Played and Skipped**  
+- **Total Tracks Played**: 16,000 tracks.
+- **Skipped Tracks**: 18.54% of tracks were skipped.  
+  - Skipping behavior varies significantly based on platform and time of day.  
+- **Completion Rate**: 67.77% of tracks were completed.
 
-3. **Tracks Played (16,000):**  
-   Total number of tracks streamed over the dataset period.  
+#### 3. **Platform Insights**
+- **Most Used Platform**: Android devices have the highest usage, likely due to the broad Android user base.  
+- **Skip Rate by Platform**:  
+  - **Windows** has the highest skip rate, meaning Windows users are more likely to skip tracks compared to their total playback.  
+  - **Android** and **iOS** have lower skip rates, reflecting a more consistent listening experience.  
+  - Windows users’ higher skip rate might result from multitasking or the convenience of skipping on a desktop platform.  
 
-4. **Total Days (2,715):**  
-   This represents the span of the data (from the first to the last timestamp).  
+#### 4. **Top Artists and Tracks**  
+- **Most Played Artists**: The Beatles, The Rolling Stones, and Imagine Dragons dominate the charts, indicating diverse preferences among users.  
+- **Most Played Tracks**: "The Fellowship" and "Bright Lights" are the top favorites, reflecting the users' current musical trends.
 
-5. **Most Played Tracks:**  
-   A bar chart that highlights tracks with the highest playback time. For example, “The Fellowship” was streamed the most.  
+#### 5. **Shuffle Mode**  
+- **Shuffle Usage**: 32.15% of users listen in shuffle mode, showing a preference for randomized playback among a significant portion of users.  
 
-6. **Skipped Tracks:**  
-   A pie chart showing how many tracks users skipped versus completed.  
-
-7. **Reason for Ending Tracks:**  
-   Pie chart breaking down why a track ended—was it skipped, completed, or interrupted?  
-
-8. **Trends Over Time:**  
-   A line chart that visualizes listening patterns across different years, showing how user engagement has changed over time.  
-
-9. **Most Used Platform:**  
-   A bar chart showing which platforms (Android, iOS, Web Player, etc.) were most popular for streaming.  
-
-10. **Shuffle Mode:**  
-    A pie chart showing how often users utilized shuffle mode while listening to tracks.  
+#### 6. **Listening Trends Over Time**  
+- **Trend Analysis**: Steady growth in listening activity is visible over the years, with notable spikes during holiday periods or major album releases.
 
 ---
 
-### **Page 2: In-Depth Analysis**  
-1. **Play Time by Period (Morning, Afternoon, Evening, Night):**  
-   A bar chart that analyzes when users listen to music the most, grouped into time periods. For example, mornings and evenings show higher engagement, reflecting commute or downtime habits.  
+### **Recommendations**
+1. **Reduce Track Skipping on Windows**:  
+-  Analyze the playlist and track recommendations for desktop users to improve engagement.  
+- Consider implementing smarter track transitions or personalized playlists tailored to desktop activity.  
 
-2. **Skip Rate by Platform:**  
-   A bar chart that shows which platforms had the highest skip rates, giving insights into platform usability or user behavior.  
+2. **Enhance Mobile Experience**:  
+- Focus on optimizing the mobile user interface and introducing features such as dynamic playlists for Android and iOS users, as they form the majority of the audience.  
 
-3. **Completion Rate:**  
-   A pie chart showing how often tracks were fully played versus skipped.  
+3. **Maximize Evening Listening**:  
+- Create curated evening playlists or promote evening-focused campaigns to capitalize on the peak listening hours.  
 
-4. **Most Played Artists:**  
-   A bar chart listing the top artists by playback time, with bands like “The Beatles” and “The killers” ranking high.  
+4. **Promote Shuffle Mode Usage**:  
+- Highlight shuffle mode in marketing campaigns or include shuffle-based challenges and curated lists to attract more randomized listeners.  
 
-5. **Skip Rate by Time Period:**  
-   A line chart showing how skip rates vary throughout the day. For instance, users tend to skip tracks more in the evening compared to the afternoon.  
-
----
-
-## **Key Insights from the Dashboard**  
-
-- **Listening Habits:**  
-   Users listen the most during mornings and evenings, likely corresponding to commutes or relaxation time.  
-
-- **Engagement Patterns:**  
-   The average playback time per track is 2 minutes, suggesting many users either skip early or prefer shorter tracks.  
-
-- **Platform Preferences:**  
-   Android is the most used platform, followed by Web Player. Interestingly, Android users also had the highest skip rates.  
-
-- **Top Tracks & Artists:**  
-   Certain tracks like *“The Fellowship”* and artists like *The Beatles* dominate playback time, showing high user loyalty to these artists.  
-
-- **Shuffle Usage:**  
-   Shuffle mode was used only 32% of the time, indicating that most users prefer to control their listening order.  
-
----
-## **Recommendations:**
-**Optimize Track Length:**
-Consider reducing the average track length or providing users with shorter versions of songs to decrease skip rates.
-
-**Focus Marketing Efforts During Peak Hours:**
-Schedule promotional campaigns, new releases, and ads for morning (8 AM - 11 AM) and evening (6 PM - 9 PM) to maximize engagement.
-
-**Enhance Android Experience:**
-Invest in improving playback features and user experience on Android, as it’s the most used platform.
-
-**Personalized Playlists:**
-Use insights from skipped tracks to curate playlists tailored to user preferences, reducing the likelihood of skips.
-
-**Engage During Evenings:**
-Encourage evening listening with calming or thematic playlists to align with user behavior.
-
-**Artist Promotion:**
-Highlight popular artists (e.g., The Beatles) to capitalize on existing listening trends and introduce similar genres or artists.
+5. **Leverage Popular Artists and Tracks**:  
+- Use insights from the top artists and tracks to drive marketing campaigns, such as promoting similar genres or creating themed playlists.
 
 ---
 
-## **Steps to Build the Dashboard in Power BI**  
+### **Steps Taken in Power BI**
+1. **Data Import**:  
+   The dataset was imported into Power BI and cleaned to ensure consistency. The fields included track name, artist name, ms_played, platform, shuffle mode, and reason for ending the track.  
 
-Here’s how I built the dashboard from the ground up:  
+2. **Transformations**:  
+   - Created a new column to group playback times into time periods: Morning, Afternoon, Evening, and Night.  
+   - Converted playback time from milliseconds to hours for better readability.  
 
-### **Data Preparation**  
-1. **Dataset Overview:**  
-   The dataset includes columns like `spotify_track_uri`, `artist_name`, `platform`, `ms_played`, and more.  
+3. **Visualizations**:  
+   - **Card Visuals**: Displayed total playback time, average playback time, and total tracks played.  
+   - **Bar Charts**: Showed most played tracks, skipped tracks, and platform usage.  
+   - **Pie Charts**: Displayed skip rates and reasons for ending tracks.  
+   - **Line Graph**: Highlighted listening trends over time.  
 
-2. **Calculated Columns and Measures:**  
+4. **Key Calculations**:  
+     *Calculated Columns and Measures:*  
    - Converted `ms_played` into hours for readability:  
      ```DAX
      Playback Hours = SUM('Data'[ms_played]) / 3600000
@@ -138,35 +102,9 @@ Here’s how I built the dashboard from the ground up:
      Total Days = DATEDIFF(MIN('Data'[ts]), MAX('Data'[ts]), DAY)
      ```  
 
----
-
-### **Building Visuals in Power BI**  
-1. Drag fields into visualizations, such as bar charts, pie charts, and line graphs.  
-2. Format visuals using consistent green color themes to reflect Spotify branding.  
-3. Use slicers for filters like Date, Artist, and Platform to allow dynamic filtering.  
 
 ---
 
-## **How to Use the Dashboard**  
-
-1. **Identify Listening Trends:**  
-   Use the “Trends Over Time” chart to analyze how user engagement evolved.  
-
-2. **Analyze Playback Patterns:**  
-   Focus on the “Play Time by Period” chart to determine when users are most active.  
-
-3. **Understand User Behavior:**  
-   Use the “Skipped Tracks” and “Reason for Ending Track” visuals to uncover why tracks are skipped.  
-
-4. **Optimize Platform Performance:**  
-   The “Skip Rate by Platform” chart helps identify which platforms might need improvement.  
-
----
-
-## **Conclusion**  
-
-This dashboard highlights user engagement with Spotify, offering insights into track performance, listening patterns, and platform usage. The findings can guide decisions like optimizing track lengths, improving platform interfaces, or targeting marketing efforts during peak listening times.  
-
----
-
+### **Conclusion**
+The analysis provides a comprehensive understanding of user behavior on Spotify, revealing insights into listening trends, platform preferences, and track completion rates. Implementing the recommendations can enhance user engagement, reduce skipping behavior, and drive overall satisfaction.  
 
