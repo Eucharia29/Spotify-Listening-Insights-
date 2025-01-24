@@ -7,7 +7,7 @@ This project dives deep into Spotify listening behavior. Using Power BI, I creat
 
 ---
 
-## **DataSet**:From Maven Analytics
+## **Data Source**:From Maven Analytics
 
 ---
 
