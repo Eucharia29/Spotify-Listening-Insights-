@@ -1,7 +1,7 @@
 
 ---
 
-# Spotify Listening Insights Dashboard  
+# Spotify Listening Insights  
 
 This project dives deep into Spotify listening behavior. Using Power BI, I created a dashboard to visualize how users interact with tracks—what they love, when they listen most, and what they skip. Here’s everything you need to know about the dashboard, the insights it provides, and how I built it.  
 
